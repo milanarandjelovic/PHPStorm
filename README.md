@@ -1,5 +1,4 @@
-# PHPStorm
-## PHPStorm settings and live templates
+# PHPStorm settings and live templates
 
 1. Download and copy the xml file(s) to your templates folder:
  * Windows: ``<your home directory>\.<product name><version number>\config\templates``
