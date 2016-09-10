@@ -1,34 +1,34 @@
 <templateSet group="PHP">
   <template name="class" value="class $Name$ extends $Controller$&#10;{&#10;    $END$&#10;}" description="Create a new PHP Class" toReformat="false" toShortenFQNames="true">
-    <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="Controller" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Name" expression="" defaultValue="&quot;Name&quot;" alwaysStopAt="true" />
+    <variable name="Controller" expression="" defaultValue="&quot;Controller&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
   <template name="met" value="public function $NAME$($ARG$)&#10;{&#10;    $END$&#10;}" description="Create a new PHP Public Method" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;Name&quot;" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="&quot;$arg&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
   <template name="pmet" value="protected function $NAME$($ARG$)&#10;{&#10;    $END$&#10;}" description="Create a new PHP Protected Method" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;Name&quot;" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="&quot;$arg&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
   <template name="prmet" value="private function $NAME$($ARG$)&#10;{&#10;    $END$&#10;}" description="Create a new PHP Private Method" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;Name&quot;" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="&quot;$arg&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
   <template name="vd" value="echo &quot;&lt;pre&gt;&quot;;&#10;var_dump($START$);&#10;echo &quot;&lt;/pre&gt;&quot;;$END$" description="var_dump with pre tag" toReformat="false" toShortenFQNames="true">
-    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="START" expression="" defaultValue="&quot;$arg&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
