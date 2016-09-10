@@ -1,4 +1,4 @@
-<keymap version="1" name="Default copy" parent="$default">
+<keymap version="1" name="main-keymaps" parent="$default">
   <action id="ActivateDatabaseToolWindow">
     <keyboard-shortcut first-keystroke="alt 3" />
   </action>
