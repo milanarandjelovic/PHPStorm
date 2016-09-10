@@ -1,6 +1,7 @@
-<templateSet group="php">
-  <template name="class" value="class $Name$&#10;{&#10;    $END$&#10;}" description="Create a new PHP Class" toReformat="false" toShortenFQNames="true">
+<templateSet group="PHP">
+  <template name="class" value="class $Name$ extends $Controller$&#10;{&#10;    $END$&#10;}" description="Create a new PHP Class" toReformat="false" toShortenFQNames="true">
     <variable name="Name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Controller" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
