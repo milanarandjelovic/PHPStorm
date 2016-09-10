@@ -1,0 +1,86 @@
+<templateSet group="Vue.js">
+  <template name="vue" value="var $vm$ = new Vue({&#10;&#9;el: '$elName$'&#10;})" description="Vue instance" toReformat="false" toShortenFQNames="true">
+    <variable name="vm" expression="" defaultValue="&quot;vm&quot;" alwaysStopAt="true" />
+    <variable name="elName" expression="" defaultValue="&quot;#app&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="vuec" value="&lt;template&gt;&#10;    &lt;div id=&quot;$name$&quot;&gt;&#10;    &lt;/div&gt;&#10;&lt;/template&gt;&#10;&#10;&lt;script&gt;&#10;    export default {&#10;        name: '$name$',&#10;        data () {&#10;            return {&#10;                $END$&#10;            };&#10;        }&#10;    };&#10;&lt;/script&gt;&#10;&#10;&lt;style lang=&quot;$lang$&quot;&gt;&#10;&lt;/style&gt;" description="Vue component" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="lang" expression="" defaultValue="&quot;css&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vuecdata" value="data () {&#10;    return {&#10;        $END$&#10;    };&#10;}" description="Vue component data" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vueccomputed" value="computed: {&#10;  $property$ () {&#10;    return $END$;&#10;  }&#10;}" description="Vue computed props" toReformat="false" toShortenFQNames="true">
+    <variable name="property" expression="" defaultValue="&quot;property&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vuecmethods" value="methods: {&#10;  $methodName$ () {&#10;    $END$&#10;  }&#10;}" description="Vue component methods" toReformat="false" toShortenFQNames="true">
+    <variable name="methodName" expression="" defaultValue="&quot;methodName&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vuecmixins" value="mixins: [$mixin$]$END$" description="Vue component mixins" toReformat="false" toShortenFQNames="true">
+    <variable name="mixin" expression="" defaultValue="&quot;mixin&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vuecprops" value="props: {&#10;  $name$: {&#10;    type: $type$,&#10;    required: $required$,&#10;    default: $default$&#10;  }&#10;}" description="Vue component props" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="type" expression="" defaultValue="&quot;String | Number | Boolean | Object | Array | Function &quot;" alwaysStopAt="true" />
+    <variable name="required" expression="" defaultValue="&quot;true&quot;" alwaysStopAt="true" />
+    <variable name="default" expression="" defaultValue="&quot;null&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vuecwatch" value="watch: {&#10;  '$name$': ($val$, $oldVal$) =&gt; {&#10;    $END$&#10;  }&#10;}" description="Vue component watch" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <variable name="val" expression="" defaultValue="&quot;val&quot;" alwaysStopAt="true" />
+    <variable name="oldVal" expression="" defaultValue="&quot;oldVal&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vuehttp" value="this.$http('$url$', $data$, {method:'$method$'}).then(res =&gt; {&#10;  console.log(res);&#10;}).catch(err =&gt; {&#10;  console.log(err);&#10;});" description="Vue resource this.$http()" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true" />
+    <variable name="data" expression="" defaultValue="&quot;data&quot;" alwaysStopAt="true" />
+    <variable name="method" expression="" defaultValue="&quot;method&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vueget" value="this.$http.get('$url$',$data$, $options$).then(res =&gt; {&#10;  console.log(res);&#10;}).catch(err =&gt; {&#10;  console.log(err);&#10;});" description="Vue resource this.$http.get()" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true" />
+    <variable name="data" expression="" defaultValue="&quot;data&quot;" alwaysStopAt="true" />
+    <variable name="options" expression="" defaultValue="&quot;options&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vuepost" value="this.$http.post('$url$',$data$, $options$).then(res =&gt; {&#10;  console.log(res);&#10;}).catch(err =&gt; {&#10;  console.log(err);&#10;});" description="Vue resource this.$http.post()" toReformat="false" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="&quot;url&quot;" alwaysStopAt="true" />
+    <variable name="data" expression="" defaultValue="&quot;data&quot;" alwaysStopAt="true" />
+    <variable name="options" expression="" defaultValue="&quot;options&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="vuert" value="this.$route $END$&#10;" description="this.$route" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
