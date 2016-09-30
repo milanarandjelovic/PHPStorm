@@ -1,0 +1,20 @@
+<templateSet group="JavaScript">
+  <template name="import" value="import $name$ from '$ex$'$END$" description="import" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ex" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="clog" value="console.log('$name$');$END$" description="clog" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="eserver" value="var express = require('express')&#10;var app = express()&#10;&#10;app.use(express.static(__dirname));&#10;app.listen(8080);&#10;console.log('Server started at http://localhost:8080');&#10;" description="express server" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
