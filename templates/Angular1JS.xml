@@ -1,0 +1,76 @@
+<templateSet group="AngularJS ">
+  <template name="ng1-directive" value="(function() {&#10;    'use strict';&#10;&#10;    angular&#10;        .module('$Module$')&#10;        .directive('$Directive$', $Directive$);&#10;&#10;    $Directive$.$inject = ['$dependency1$'];&#10;    function $Directive$($dependency1$) {&#10;        // Usage:&#10;        //&#10;        // Creates:&#10;        //&#10;        var directive = {&#10;            bindToController: true,&#10;            controller: $Controller$Controller,&#10;            controllerAs: '$vm$',&#10;            link: link,&#10;            restrict: 'A',&#10;            scope: {&#10;            }&#10;        };&#10;        return directive;&#10;        &#10;        function link(scope, element, attrs) {&#10;        }&#10;    }&#10;    /* @ngInject */&#10;    function $Controller$Controller () {&#10;        &#10;    }&#10;})();" description="A angular directive" toReformat="true" toShortenFQNames="true">
+    <variable name="Module" expression="" defaultValue="&quot;Module&quot;" alwaysStopAt="true" />
+    <variable name="Directive" expression="" defaultValue="&quot;Directive&quot;" alwaysStopAt="true" />
+    <variable name="dependency1" expression="" defaultValue="&quot;dependency1&quot;" alwaysStopAt="true" />
+    <variable name="Controller" expression="" defaultValue="&quot;Controller&quot;" alwaysStopAt="true" />
+    <variable name="vm" expression="" defaultValue="&quot;vm&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ng1-controller" value="(function() {&#10;'use strict';&#10;&#10;    angular&#10;        .module('$Module$')&#10;        .controller('$Controller$Controller', $Controller$Controller);&#10;&#10;    $Controller$Controller.$inject = ['$dependency1$'];&#10;    function $Controller$Controller($dependency1$) {&#10;        var vm = this;&#10;        $END$&#10;&#10;        activate();&#10;&#10;        ////////////////&#10;&#10;        function activate() { }&#10;    }&#10;})();" description="Define a new Angular Controller. You can change the controller name and parameters." toReformat="true" toShortenFQNames="true">
+    <variable name="Module" expression="" defaultValue="&quot;Module&quot;" alwaysStopAt="true" />
+    <variable name="Controller" expression="" defaultValue="&quot;Controller&quot;" alwaysStopAt="true" />
+    <variable name="dependency1" expression="" defaultValue="&quot;dependency1&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng1-for" value="angular.forEach($iterateOver$, function(value, key){&#10;  $END$    &#10;});" description="angular.foreach loop" toReformat="true" toShortenFQNames="true">
+    <variable name="iterateOver" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng1-b" value="{{$binding$}}$END$" description="A binding in AngularJS" toReformat="true" toShortenFQNames="true">
+    <variable name="binding" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+  <template name="ng1-module" value="(function() {&#10;    'use strict';&#10;&#10;    angular.module('$Module$', [&#10;        $END$&#10;    ]);&#10;})();" description="A new angular module" toReformat="true" toShortenFQNames="true">
+    <variable name="Module" expression="" defaultValue="&quot;Module&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ng1-factory" value="(function() {&#10;'use strict';&#10;&#10;    angular&#10;        .module('$Module$')&#10;        .factory('$Service$', $Service$);&#10;&#10;    $Service$.$inject = ['$dependency1$'];&#10;    function $Service$($dependency1$) {&#10;        var service = {&#10;            $exposedFn$:$exposedFn$&#10;        };&#10;        $END$&#10;        return service;&#10;&#10;        ////////////////&#10;        function $exposedFn$() { }&#10;    }&#10;})();" description="A angular factory" toReformat="true" toShortenFQNames="true">
+    <variable name="Module" expression="" defaultValue="&quot;Module&quot;" alwaysStopAt="true" />
+    <variable name="Service" expression="" defaultValue="&quot;Service&quot;" alwaysStopAt="true" />
+    <variable name="dependency1" expression="" defaultValue="&quot;dependency1&quot;" alwaysStopAt="true" />
+    <variable name="exposedFn" expression="" defaultValue="&quot;esposedFn&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ng1-service" value="(function() {&#10;'use strict';&#10;&#10;    angular&#10;        .module('$Module$')&#10;        .service('$Service$', $Service$);&#10;&#10;    $Service$.$inject = ['$dependency1$'];&#10;    function $Service$($dependency1$) {&#10;        this.$exposedFn$ = $exposedFn$;&#10;        $END$&#10;        ////////////////&#10;&#10;        function $exposedFn$() { }&#10;        }&#10;})();" description="Define an Angular Module Service . You can change the service name and service injectables." toReformat="true" toShortenFQNames="true">
+    <variable name="Module" expression="" defaultValue="&quot;Module&quot;" alwaysStopAt="true" />
+    <variable name="Service" expression="" defaultValue="&quot;Service&quot;" alwaysStopAt="true" />
+    <variable name="dependency1" expression="" defaultValue="&quot;dependency1&quot;" alwaysStopAt="true" />
+    <variable name="exposedFn" expression="" defaultValue="&quot;esposedFn&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ng1-filter" value="(function() {&#10;'use strict';&#10;&#10;    angular&#10;        .module('$Module$')&#10;        .filter('$Filter$', $Filter$);&#10;&#10;    function $Filter$() {&#10;        return $Filter$Filter;&#10;&#10;        ////////////////&#10;&#10;        function $Filter$Filter($Params$) {&#10;            return $Params$;&#10;        }&#10;    }&#10;})();" description="Define an Angular Module Filter. You can change the filter name." toReformat="true" toShortenFQNames="true">
+    <variable name="Module" expression="" defaultValue="&quot;Module&quot;" alwaysStopAt="true" />
+    <variable name="Filter" expression="" defaultValue="&quot;Filter&quot;" alwaysStopAt="true" />
+    <variable name="Params" expression="" defaultValue="&quot;Params&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ng1-component" value="(function() {&#10;'use strict';&#10;&#10;    // Usage:&#10;    // &#10;    // Creates:&#10;    // &#10;&#10;    angular&#10;        .module('$Module$')&#10;        .component('$Component$', {&#10;            template:'$htmlTemplate$',&#10;            //templateUrl: '$templateUrl$',&#10;            controller: $Controller$Controller,&#10;            bindings: {&#10;                $Binding$: '=',&#10;            },&#10;        });&#10;&#10;    $Controller$Controller.$inject = ['$dependency1$'];&#10;    function $Controller$Controller($dependency1$) {&#10;        var $ctrl = this;&#10;        $END$&#10;&#10;        ////////////////&#10;&#10;        $ctrl.$onInit = function() { };&#10;        $ctrl.$onChanges = function(changesObj) { };&#10;        $ctrl.$onDestory = function() { };&#10;    }&#10;})();" description="A new angular component" toReformat="false" toShortenFQNames="true">
+    <variable name="Module" expression="" defaultValue="&quot;Module&quot;" alwaysStopAt="true" />
+    <variable name="Component" expression="" defaultValue="&quot;Component&quot;" alwaysStopAt="true" />
+    <variable name="htmlTemplate" expression="" defaultValue="&quot;htmlTemplate&quot;" alwaysStopAt="true" />
+    <variable name="templateUrl" expression="" defaultValue="&quot;templateUrl&quot;" alwaysStopAt="true" />
+    <variable name="Controller" expression="" defaultValue="&quot;Controller&quot;" alwaysStopAt="true" />
+    <variable name="Binding" expression="" defaultValue="&quot;Bindning&quot;" alwaysStopAt="true" />
+    <variable name="dependency1" expression="" defaultValue="&quot;dependency1&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
